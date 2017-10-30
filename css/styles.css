@@ -1,3 +1,7 @@
 button {
   margin-top: 10px;
 }
+
+.finished {
+  text-decoration: line-through;
+}

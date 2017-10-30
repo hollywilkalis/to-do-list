@@ -11,8 +11,15 @@
   <body>
     <div class="container">
       <form id="list">
-        <label class="col-form-label h4" for="newTask">Enter a task to add to your to-do list</label>
-        <input type="text" class="form-control" id="newTask" placeholder="Type your task here">
+        <div class="form-group">
+          <label class="col-form-label h4" for="newTask">Enter a task to add to your to-do list</label>
+          <input type="text" class="form-control" id="newTask" placeholder="Type your task here">
+        </div>
+
+        <div class="form-group">
+          <label class="col-form-label" for="dueDate">When does this need to be done?</label>
+          <input type="text" class="form-control" id="dueDate" placeholder="Due date">
+        </div>
         <button type="submit" class="btn btn-info btn-lg">Add your task, yo!</button>
       </form>
 
