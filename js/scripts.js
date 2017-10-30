@@ -1,20 +1,21 @@
-function Task(toDo){
-    this.toDo = toDo;
+//business logic:
+function Task(theTask){
+    this.toDo = theTask;
 }
 
-$(document).ready(function) {
+$(document).ready(function() {
   $("form#list").submit(function(event) {
     event.preventDefault();
 
-    var newTask = $("input#newTask").val();
+    var inputtedTask = $("input#newTask").val();
 
-    var getDone = new Task(newTask);
+    var getDone = new Task(inputtedTask);
 
     $("ul#taskList").append("<li><span class='taskItem'>" + getDone.toDo + "</span></li>");
 
     // $("ul#taskList").click()
 
-    $("input#toDo").val("");
+    $("input#newTask").val("");
 
   });
 });
